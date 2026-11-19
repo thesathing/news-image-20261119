@@ -1,7 +1,7 @@
-// news-image-20261119: "THE WORLD TODAY" — Thursday 19 November 2026 in one image.
+// news-image-20261119 v2: "THE WORLD TODAY" — Thursday 19 November 2026 in one image.
 //
-// The entry is a front page drawn for the day's news: 40 stories across
-// 7 regions — a crimson masthead, a full-width hero for the Trump-Xi-Putin
+// The entry is a front page drawn for the day's news: 37 stories across
+// 7 regions — a cream front page, three illustrated leads — the Trump-Xi-Putin
 // trilateral in Shenzhen, three illustrated sub-leads (GTA VI, Anthropic's
 // Nasdaq debut, the ICJ Rohingya verdict), nine illustrated story cards,
 // a UTC timeline, a world map with colour-coded pins, a numbered also-list
@@ -25,7 +25,7 @@ const EXPECTED_HEIGHT = 1024;
 const PNG_SIGNATURE = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]);
 
 function fail(message: string): never {
-  throw new Error(`news-image-20261119: ${message}`);
+  throw new Error(`news-image-20261119 v2: ${message}`);
 }
 
 function pngDimensions(bytes: Buffer): { width: number; height: number } {
